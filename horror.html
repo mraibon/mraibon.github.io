@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+Horror Movie Analysis
+-->
+<html>
+	<head>
+		<title>Michael Raibon | Data Analyst</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<nav id="menu">
+		<div class="inner">
+			<ul class="links">
+				<a href="index.html">Home</a>
+		</div>
+	</nav> 
+	<body class="is-preload">
+
+
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- Banner -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Horror Movie Analysis</h1>
+							<p class="major">When it comes to the world of horror cinema, observing certain trends and patterns can provide valuable insights for filmmakers and film enthusiasts. 
+								From the peak times to release a horror film to the relationship between budget and revenue, I dive into horror movie data using Python and Tableau. 
+								All data was extracted using the <a href="https://www.themoviedb.org/?language=en-US"> TMDB (The Movie Database)</a> API. 
+								View the Tableau dashboard <a href="https://public.tableau.com/views/HorrorMovies_17103826375570/RevenuebyYear-EachMovie?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"> here.</a>
+						</div></p>
+						<div class="image">
+							<img src="images/horror2.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Spotlight -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2> Peak Months for Horror Movie Releases</h2>
+							<p> It is no surprise that October, the spookiest month of the year, tops the list for the highest number of horror movie releases. 
+								October, along with August and September, consistently sees a surge in horror films hitting the big screen. 
+								Strategically and financially, it could make sense to release horror movies in preparation for Halloween, but this could also bring heightened competition. 
+								Classic movies like <i>Night of the Living Dead</i>, an influential and timeless horror film, and the original <i>Halloween</i> movie were both released in October.
+								For the remaining months, there is notable consistency throughout the year; however, April and June surprisingly offer higher than expected releases. 
+								My three personal favorites, <i>Get Out (2018)</i>, <i>Hereditary (2018)</i>, <i>and Smile (2022)</i>, were released in February, June, and September, respectively. 
+							</p>
+						</div>
+						<div>
+							<img src="images/horror3.jpg" alt="" width="100%"/>
+						</div>
+					</section>
+
+				<!-- Spotlight -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>ROI Trends</h2>
+							<p> When it comes to generating a return on investment (ROI), July stands out as the clear leader amongst the months despite not being a peak month for horror releases. 
+								This month benefits from a few standout films, including the iconic <i>The Blair Witch Project</i>, which boasts the highest ROI ever recorded for a horror movie. 
+								This suggests that while the quantity of releases in a particular month might vary, strategic timing and standout films can yield impressive returns.
+								Additionally, there is a higher ROI variance/standard deviation in months with more releases as shown in the table in the next section. 
+								<h5><strong>The Role of Voter Ratings</strong></h5>
+								In examining the impact of voter ratings on revenue, the data indicates that this factor provided inconclusive or insignificant impact. 
+								This could be due to the small number of ratings and smaller user base on the TMDB website in comparison to larger platforms like IMDb and Rotten Tomatoes.
+								Therefore, I cannot conclude if voter ratings play a role in driving an increase in revenue given this data.
+							</p>
+						</div>
+						<div>
+							<img src="images/horror4.jpg" alt="" width="100%"/>
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Monthly ROI - Standard Deviation</h2>
+							<p> As mentioned previously, there is a huge variance in months with a high volume of releases, particularly in September and October.
+								This would mean that although September and October could yield favorable results in certain instances, especially moviegoers who are preparing for Halloween, there is still risk involved.
+								Because the standard deviation is significantly high across all the months, it's better to understand other movies you're competing with at the time of release, the demographics for horror movies in general (and your audience, if possible), have effective marketing, and study any trends for your particular type of horror movie (e.g., slasher, psychological).
+							</p>
+						</div>
+						<div>
+							<img src="images/horrortable.jpg" alt="" width="100%"/>
+						</div>
+					</section>
+
+				<!-- Spotlight -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Highest Grossing Horror Films</h2>
+							<p>
+								<i>It (2017)</i> remains the highest grossing horror film of all time. This could be due to nostalgia from the 1990's TV movie, the success of the original Stephen King book, the sightings of clown in the U.S. around the time -- or it was just a great movie!
+							<i>Jaws (1975)</i> and <i>The Exorcist (1973)</i> have been able to generate substantial revenue over the decades as classic horror movies.
+							In this graph and the next, use the following <a href="https://github.com/mraibon/Horror-Movies/blob/main/horror_legend.jpg">legend</a>.
+							</p>
+							<h5><strong>Personal Favorites</strong></h5>
+							My favorites performed well at the box office and achieved postive ROI. 
+							It's always gratifying to see that the movies you enjoy also resonate with a wider audience.
+						</div>
+						<div>
+							<img src="images/horror5.jpg" alt="" width="100%"/>
+						</div>
+					</section>
+
+				<!-- Spotlight -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>What is the Optimal Spend?</h2>
+							<p>
+								Budget plays a crucial role in a film’s financial success, but it does not guarantee it. 
+								The trend line comparing revenue to budget reveals that most horror movies, around 68%, achieve a positive ROI. 
+								Notably, even films with high budgets, such as "Van Helsing" with a $160 million budget, can see positive returns. 
+								However, caution is warranted as other high-budget films like "Haunted Mansion" and "The Wolfman" did not perform as well. 
+								This trend underscores that while higher budgets can often lead to better financial outcomes, low-budget independent films have also shown remarkable success, sometimes yielding extraordinary ROIs.
+							</p>
+						</div>
+						<div>
+							<img src="images/horror6.jpg" alt="" width="100%"/>
+						</div>
+					</section>
+					
+					<section>
+						<div>
+
+						<dl>			
+							<dd>
+								<h2>Final Thoughts for Aspiring Horror Filmmakers</h2>
+								<p>
+								For those venturing into horror filmmaking, the key takeaway is to balance your budget with creativity. 
+								If you have the financial resources, investing in a higher budget can be advantageous. 
+								However, low-budget films have proven that they can also be highly successful and even become cult classics.
+								Sometimes, the charm of a "so-bad-it’s-good" movie can capture the audience’s imagination just as effectively as a high-budget production.
+								In the end, whether you are working with a large budget or a small one, the essence of a great horror film often lies in its creativity and ability to engage viewers. 
+								So, whether you are crafting a high-budget spectacle or a charmingly cheesy indie flick, there’s room for success in the world of horror cinema.
+								</p>
+							</dd>
+						</dl>
+						</div>
+					</section>
+
+
+				<!-- Footer -->
+				<footer class="wrapper style1 align-center">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="mailto:michael.raibon@gmail.com" target="_blank" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/michaelraibon/" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/mraibon" target="_blank" class="icon brands style2 fa-github"><span class="label">github</span></a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+		
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>

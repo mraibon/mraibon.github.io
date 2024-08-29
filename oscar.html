@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+Horror Movie Analysis
+-->
+<html>
+	<head>
+		<title>Michael Raibon | Data Analyst</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<nav id="menu">
+		<div class="inner">
+			<ul class="links">
+				<a href="index.html">Home</a>
+		</div>
+	</nav> 
+	<body class="is-preload">
+
+
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- Banner -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h3><b>Academy Award Winners, Box Office Success, and IMDb Rating</b></h3>
+							<p> The Academy Awards have long been the source of fascination and inspiration for filmmakers and film watchers. 
+								Particularly, the "Big Five" categories of Best Picture, Best Director, Best Writing (Original and Adapted), Best Actor, and Best Actress have been of significant interest.
+								This project analyzes two factors that could contribute to a film's success in these categories: IMDb ratings and box office revenue.
+								Using data from 2000 to 2018, I highlight any notable insights about Academy Award winners. 
+								Data is downloaded from the <a href="https://datasets.imdbws.com/">IMDb website</a>,
+								 							<a href="https://www.kaggle.com/datasets/thedevastator/hollywood-movies-domestic-lifetime-gross-and-ran">Hollywood dataset</a>, and
+															<a href="https://www.kaggle.com/datasets/unanimad/the-oscar-award">Oscar dataset</a> from Kaggle.
+								View the Tableau dashboard <a href="https://public.tableau.com/views/TheAcademyAwards/AcademyAwards?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">here</a>.
+							</p>
+						</div>
+						<div class="image">
+							<img src="images/hollywood.jpg" alt=""/>
+						</div>
+					</section>
+
+				<!-- Spotlight -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h4><strong>IMDb Ratings and Audience Approval</strong></h4>
+							<h5> Understanding how an audience perceives a film can often reflect how successful it is at the box office. Can the same be said for nominations and winners at the Academy Awards? 
+								Examples like <i>The Gladiator</i>, winner of the Best Picture and the highest IMDb rating that year, appear right in line with this, despite the Academy's industry professionals who are different from the general public.
+							</h5>
+						</div>
+						<div>
+							<img src="images/oscar3.jpg" alt="" width="100%"/>
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h4><strong>Box Office Success</strong></h4>
+							<h5> On the other hand, having success at the box office might not correlate with winning at Academy Awards, or even being nominated.
+								Despite not having the highest revenue or IMDb rating, <i>The King's Speech</i> took the Best Picture Oscar in the 2011 Academy Awards.
+								There is clearly variance amongst the nominations for Best Picture, with respect to money earned and audience approval.
+								So, what guarantees success?
+							</h5>
+						</div>
+						<div>
+							<img src="images/oscar4.jpg" alt="" width="100%"/>
+						</div>
+					</section>
+
+
+					
+					<section class="wrapper style1 align-center">
+						<div class="content">
+							<br>
+							<h3><b>Conclusion</b></h3>
+							<section class="wrapper style1 align-left">
+								Unfortunately, the steps I took to clean this data made the data imperfect. 
+								Additionally, only relying on two metrics to predict Academy Award success is not ideal.
+								Therefore, drawing any real conclusions using this data is not sufficient. However, I do want to highlight some key points:
+                                <li> Gladiator oddly stands out as a data point amongst the other movies released that year - and it also won Best Picture and Best Actor!</li>
+                                <li> In the 2011 Academy Awards, both Toy Story 3 and Inception exceeded the Best Picture winner (The King's Speech) in both revenue and IMDb rating. However, as a fan of all three movies, I understand the difficulty in making the decision by the Academy.</li>
+                                <li> I observed nine movies that won both Best Picture and Best Director, three movies that won both Best Picture and Best Actor, and only one movie that won both Best Picture and Best Actress.</li>
+								 This variance amongst nominees and winners of the "Big Five" categories represents how difficult it is to predict award shows. If a filmmaker wants to focus on winning big, it is best to focus on creating interesting narratives and impactful performances. 
+								Although this may not always guarantee success, it is important to not focus on the prize - the film process itself is the prize!
+							<br>
+							<br>
+					</section>
+					</section>
+
+
+				<!-- Footer -->
+				<footer class="wrapper style1 align-center">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="mailto:michael.raibon@gmail.com" target="_blank" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/michaelraibon/" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/mraibon" target="_blank" class="icon brands style2 fa-github"><span class="label">github</span></a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+		
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
