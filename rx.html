@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<!--
+Horror Movie Analysis
+-->
+<html>
+	<head>
+		<title>Michael Raibon | Data Analyst</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<nav id="menu">
+		<div class="inner">
+			<ul class="links">
+				<a href="index.html">Home</a>
+		</div>
+	</nav> 
+	<body class="is-preload">
+
+
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- Banner -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Comprehensive Analysis of Pharmacy Operations and Patient Outcomes</h1>
+							<p class="major">In this study, I conducted analysis of hospital pharmacy operations and their impact on patient outcomes.
+                                By utilizing a <b>program-generated</b> dataset with patient demographics, medication details (including NDC Code), adherence rates, and pain management outcomes, I aim to uncover insights that could optimize pharmacy processes and improve patient care.
+								All medication data was downloaded from the FDA website <a href="https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory">here</a>. 
+                                All customer demographic and temporal data was generated using Faker, a Python library. 
+								<b>Please note this data does not reflect actual customer data or medication data. Key findings and recommendations are entirely hypothetical.</b> 
+								Data spans February 1, 2024 - September 18, 2024.
+								Please view the Tableau dashboard <a href="https://public.tableau.com/views/PharmacyData_17266034020820/DataOverview?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">here</a>.
+							</p>
+						</div>
+						<div class="image">
+							<img src="images/rx/rx_main.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Spotlight -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h3>Data Overview</h3>
+							<p> Using fake customer data and NDC's dataset for medications, the complete dataset includes: 
+                                <li>Patient Information: ID, name, gender, age</li>
+                                <li>Medication Information: medication name, NDC code, dosage form, stock levels, prescribed and dispensed medication </li>
+                                <li>Temporal data: prescription time and dispensation time (processing time), treatment duration</li>
+                                <li>Patient outcomes: medication adherence (did the patient take the medication?), pain levels before and after treatment</li>
+							</p>
+						</div>
+						<div>
+							<img src="images/rx/data_overview.jpg" alt="" width="100%"/>
+						</div>
+					</section>
+
+				<!-- Spotlight -->
+				<div align="right">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Patient Overview</h2>
+							<p> This dashboard includes:
+								<li>Adherence by age</li>
+								<li>Adherence by month</li>
+								<li>Adherence by dosage form (capsule, tablet, injection, and other)</li>
+								<li>Patient table with demographic information, the Rx prescribed and the Rx dispensed to patient, and pain levels</li>
+								<li>A boxplot comparing the pain levels before and after medication</li>
+								
+							</p>
+						</div>
+						<div>
+							<img src="images/rx/patient_overview.jpg" alt="" width="100%"/>
+						</div>
+					</section>
+
+
+				<!-- Spotlight -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Areas of Improvement</h2>
+							<p>In this dashboard, the following metrics are addressed:
+								<li>Dispensing accuracy (overall)</li>
+								<li>Dispensing accuracy in previous 3 months</li>
+								<li>Dispensing accuracy by age</li>
+								<li>The supply vs. demand for each medication</li>
+								<li>Processing time (dispensed vs. prescribed time)</li>
+						</div>
+						<div>
+							<img src="images/rx/improvement.jpg" alt="" width="100%"/>
+						</div>
+					</section>
+
+					<div class="conclusion_v2-section">
+						<h2 class="conclusion_v2-title">Key Findings and Recommendations</h2>
+						<div class="grid_v2-container">
+						  <div class="grid_v2-item upper-left">
+							<h3><b>Medication Adherence Rate</b></h3>
+							<h4><b>Key Findings</b></h4>
+								<li>Outside of a brief dip in July 2024, adherence rates have been just over 70% since May 2024</li>
+								<li>Within each age group, August 2024 had the highest adherence rates</li>
+								<li>Medications in the form of plasters, salves, and shampoos were among the lowest adherence rates for dosage forms. </li>
+								<br>
+							<h4><b>Contributing Factors</b></h4>
+								<li>Implemented medication reminder app in July 2024</li>
+								<li>Weekly pill organizers offered with each prescription</li>
+								<br>
+							<h4><b>Recommendations</b></h4>
+								<li>Conduct surveys to determine why certain patients didn't adhere to their medication</li>
+								<li>Monitor patients more frequently to ensure adherence</li>
+								<li>Label redesigns to help with readability</li>
+						  </div>
+						  <div class="grid_v2-item upper-right">
+							<h3><b>Pain Management</b></h3>
+							<h4><b>Key Findings</b></h4>
+								<li>86% of patients reported a decrease in pain levels; on the 10-point scale, 53% of patients reported a decrease in pain levels of 5 or less points
+								<li>14% of patients reported no change in pain levels</li>
+								<li>No patients reported an increase in pain levels</li>
+								<br>
+							<h4><b>Outliers</b></h4>
+								<li> The medications Cyclobenzaprine Hydrochloride and Dextroamphetamine Sulfate stand out as outliers in pain levels reported after taking these medications
+								<br>
+							<h4><b>Recommendations</b></h4>
+								<li>Consider replacing medications that don't drastically improve pain levels</li>
+								<li>Compare medication schedules and timelines for the same medication to determine if longer (or shorter) durations affect a chance in pain level</li>
+						  </div>
+						  <div class="grid_v2-item lower-left">
+							<h3><b>Dispensing Accuracy and Processing Time</b></h3>
+							<h4><b>Dispensing Accuracy</b></h4>
+								<li>Dispensing Accuracy Rate: 89.9%</li>
+								<li>Most incorrectly dispensed medications were in tablet form.</li>
+								<br>
+							<h4><b>Processing Time</b></h4>
+								<li>Average processing time: 36 hours</li>
+								<li>All medications have a varied processing time, proving that specific medications won't be easier to process</li>
+								<li>Peak processing time is at 5:00pm</li>
+								<br>
+							<h4><b>Recommendations</b></h4>
+								<li>Redesign workflow to understand why dispensing inaccuracies occur</li>
+								<li>Implement QA processes to ensure accuracy</li>
+								<li>Set targeted processing time goals every month (possibly per day or hour)</li>
+						  </div>
+						  <div class="grid_v2-item lower-right">
+							<h3><b>Inventory Management</b></h3>
+							<h4><b>Key Findings</b></h4>
+								<li>60% of medications were out of stock</li>
+								<li>Seasonal trends show that medications could be in low stock based on a high demand across several hospitals</li>
+								<br>
+							<h4><b>Predictive Analysis</b></h4>
+								<li>Using this analysis, we could predict the demand of certain medications and those similar to it
+								<li>By studying market trends, we can determine the demand for other medications</li>
+								<br>
+							<h4><b>Recommendations</b></h4>
+								<li>Implement predictive analytics in an advanced inventory management system</li>
+								<li>Communicate with other health professionals and providers to understand the market</li>
+								<li>Create automations within a dashboard to flag low stocked medications</li>
+						  </div>
+						</div>
+					  </div>
+
+				<!-- Footer -->
+				<footer class="wrapper style1 align-center">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="mailto:michael.raibon@gmail.com" target="_blank" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/michaelraibon/" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/mraibon" target="_blank" class="icon brands style2 fa-github"><span class="label">github</span></a></li>
+						</ul>
+					</div>
+				</footer>
+
+		</div>
+
+		
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const imageContainers = document.querySelectorAll('.spotlight.style1 .image');
+        
+                imageContainers.forEach(container => {
+                    container.addEventListener('click', function() {
+                        // Toggle the expanded class on the clicked image
+                        container.classList.toggle('expanded');
+                    });
+                });
+            });
+        </script>
+
+</body>
+</html>
